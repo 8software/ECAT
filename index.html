@@ -20,7 +20,7 @@
 				<li><a href="#abt">About</a></li>
 				<li><a href="#ftr">Features</a></li>
 			</ul>
-			<a href="#" class="btn">Discord</a>
+			<a href="#gts" class="btn">Get Script</a>
 		</nav>
 
 		<div class="content">
@@ -90,10 +90,17 @@
 	</div>
 
 	<!------Contact Me------>
-	<div class="contact-me">
-		<p>Join our discord to get ECAT and updates.</p>
-		<a class="button-two" href="#">Discord</a>
+	<div id="gts" class="contact-me">
+		<p>Get ECAT Script by clicking the button below.</p>
+		<a class="button-two" onclick="copyText()">Copy Loadstring</a>
 	</div>
+
+	<script>
+    function copyText() {
+        navigator.clipboard.writeText
+        ("loadstring(game:HttpGet('https://e.8cat.win/loader',true))()");
+    }
+	</script>
 
 	<!------footer start--------->
 	<footer>
