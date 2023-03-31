@@ -1,1 +1,137 @@
-<META http-equiv="refresh" content="0;URL=https://youtube.com/@fscripts">
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>FS Hub</title>
+        <meta property="og:title" content="FS Hub - Apocalypse Rising 2 and Phantom Forces Script">
+        <meta property="og:description" content="FS Hub - Apocalypse Rising 2 and Phantom Forces Script and Combat Warriors. With over 25+ features we ensure that you can destroy any player. Supporting Synapse X">
+        <meta property="og:image" content="https://scripts.bid/img/fsh.png">
+        <link rel="icon" type="image/x-icon" href="https://scripts.bid/img/fsh.png">
+		<script src="junk/jquery.min.js"></script>
+		<link rel="stylesheet" href="junk/bootstrap.min.css">
+		<link rel="stylesheet" href="junk/css2.css">
+		<link rel="stylesheet" href="junk/style.css">
+        <link rel="prefetch" as="script" href="https://cdn.jsdelivr.net/npm/tsparticles@1.39.0/tsparticles.pathseg.min.js">
+	</head>
+	<body oncontextmenu="return false"> 
+        <div id="header">
+            <div id="content">
+                <div class="title" id="main_title"><span>FS </span>HUB</div>
+                <ul>
+                    <li><a href="https://youtube.com/@fscripts" target="_blank"> YOUTUBE </a></li>
+                    <li><b> | </b></li>
+                    <li><a href="https://media.scripts.bid/getfs" target="_blank"> GET SCRIPT </a></li>
+                </ul>
+                <!--div id="test123"></div>
+                <a href="#products" class="scroller"><img src="junk/scroller.gif"></a-->
+            </div>
+        </div>
+        <script src="junk/tsparticles.min.js"></script>
+    <script>
+        tsParticles.load("tsparticles", {
+        fpsLimit: 200,
+        interactivity: {
+            events: {
+            onClick: {
+                enable: false,
+                mode: "push"
+            },
+            onHover: {
+                enable: true,
+                mode: "repulse"
+            },
+            resize: true
+            },
+            modes: {
+            bubble: {
+                distance: 400,
+                duration: 2,
+                opacity: 0.8,
+                size: 40
+            },
+            push: {
+                quantity: 4
+            },
+            repulse: {
+                distance: 200,
+                duration: 0.4
+            }
+            }
+        },
+        particles: {
+            color: {
+            value: "#cf9013"
+            },
+            links: {
+            color: "#cf9013",
+            distance: 150,
+            enable: true,
+            opacity: 1,
+            width: 1
+            },
+            collisions: {
+            enable: true
+            },
+            move: {
+            direction: "none",
+            enable: true,
+            outMode: "bounce",
+            random: false,
+            speed: 3,
+            straight: false
+            },
+            number: {
+            density: {
+                enable: true,
+                value_area: 800
+            },
+            value: 25
+            },
+            opacity: {
+            value: 0.5
+            },
+            shape: {
+            type: "circle"
+            },
+            size: {
+            random: true,
+            value: 5
+            }
+        },
+        detectRetina: true
+        });
+
+        $(".rainx").hide();
+
+        function startup() {
+            
+            $(".start").fadeOut(200);
+            $(".rainx").fadeIn(400);
+
+            var audioElement = document.createElement("audio");
+            const audioElementArray = [
+                "https://nomercy.rip/music.mp3",
+                "https://nomercy.rip/dreamSpace.mp3"
+            ];
+            const audioName = audioElementArray[Math.floor(Math.random() * audioElementArray.length)]
+            audioElement.setAttribute("src", audioName);
+            audioElement.addEventListener(
+                "ended",
+                function () {
+                    this.volume = 0.5;
+
+                    this.play();
+                },
+                false
+            );
+            audioElement.volume = 0.5;
+            audioElement.play();
+        }
+    </script>
+		
+		<script src="junk/bootstrap.bundle.min.js"></script>
+		<script src="junk/particles.min.js"></script>
+		<script src="junk/app.js"></script>
+	
+</body></html>
